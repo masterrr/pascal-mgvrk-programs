@@ -6,26 +6,22 @@ uses
 var
    a,b: integer; {input}
    p,g: real; {srednee geometricheskoe, srednee arifmeticheskoe}
+
 begin
 writeln('Vvedite 2 polozitelnih chisla');
 readln(a, b);
+writeln('Proverka vvoda: ', a, ' ', b); {proverka vvoda}
 if (a <= 0) or (b <= 0) then {Proverayem pravil'nost' vvoda cifr}
    begin
-     writeln('Vy vveli otricatelnoe chislo');
-     exit; {Vyhod iz programmy}
-   end;
-
-{srednee arifmeticheskoe}
-p := (a+b)/2;
-{srednee geometricheskoe}
-g := sqrt(a*b);
-{test}
-writeln(p, ' ', g);
-{/test}
+        writeln('Vy vveli otricatelnoe chislo');
+   exit; {Vyhod iz programmy}
+end;
+p := (a+b)/2; {srednee arifmeticheskoe}
+g := sqrt(a*b); {srednee geometricheskoe}
 if g < p then
 begin
-writeln('srednee geometricheskoe ', g , ' menshe srednego arifmeticheskogo ', p);
+writeln('srednee arifmeticheskoe ', p , ' bolshe srednego geometricheskogo ', g);
 end
 else
-writeln('srednee geometricheskoe ', g , ' ravno srednemy arifmeticheskomy ', p);
+writeln('srednee arifmeticheskoe ', p , ' ravno srednemy geometricheskomy ', g);
 end.
