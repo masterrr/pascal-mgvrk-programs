@@ -9,7 +9,7 @@ var
 
 begin
 writeln('Vvedite 2 polozitelnih chisla');
-readln(a, b);
+readln(a, b); {schityvaem chisla}
 writeln('Proverka vvoda: ', a, ' ', b); {proverka vvoda}
 if (a <= 0) or (b <= 0) then {Proverayem pravil'nost' vvoda cifr}
    begin
@@ -18,7 +18,7 @@ if (a <= 0) or (b <= 0) then {Proverayem pravil'nost' vvoda cifr}
 end;
 p := (a+b)/2; {srednee arifmeticheskoe}
 g := sqrt(a*b); {srednee geometricheskoe}
-if g < p then
+if g < p then {sravnivaem srednee arifmeticheskoe i srednee geometricheskoe}
 begin
 writeln('srednee arifmeticheskoe ', p , ' bolshe srednego geometricheskogo ', g);
 end
