@@ -18,10 +18,10 @@ if (a <= 0) or (b <= 0) then {Proverayem pravil'nost' vvoda cifr}
 end;
 p := (a+b)/2; {srednee arifmeticheskoe}
 g := sqrt(a*b); {srednee geometricheskoe}
-if g < p then {sravnivaem srednee arifmeticheskoe i srednee geometricheskoe}
-begin
-writeln('srednee arifmeticheskoe ', p , ' bolshe srednego geometricheskogo ', g);
-end
-else
-writeln('srednee arifmeticheskoe ', p , ' ravno srednemy geometricheskomy ', g);
-end.
+  if g < p then {sravnivaem srednee arifmeticheskoe i srednee geometricheskoe}
+    begin
+      writeln('srednee arifmeticheskoe ', p , ' bolshe srednego geometricheskogo ', g);
+    end
+    else
+      writeln('srednee arifmeticheskoe ', p , ' ravno srednemy geometricheskomy ', g);
+ end.
