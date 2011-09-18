@@ -9,10 +9,15 @@ var
 begin
 writeln('Vvedite x(ot kuda chitat), b(do kuda), h(shag), a(onsovanie functii) - celye chisla');
 readln(x, b, h, a);
-while x<=b do
+if h<1 then
+   writeln('Beskonechoe vychislenie')
+else
 begin
-     writeln('-----------');
-     writeln('| ', exp(ln(a)*x), ' |'); {stepen'}
-     inc(x, h);
+     while x<=b do
+     begin
+         writeln('-----------');
+         writeln('| ', exp(ln(a)*x):3, ' |'); {stepen'}
+         inc(x, h);
+     end;
 end;
 end.
