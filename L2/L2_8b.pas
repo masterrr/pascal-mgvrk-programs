@@ -1,4 +1,4 @@
-program L2_8;
+program L2_8b;
 {Vyvedite na jekran tablicu znachenij funkcii y=a^x dlja h, izmenjajuwegosja ot a do b s shagom h}
 var
    x: integer; {x, stepen'} {ot kuda, for}
