@@ -1,23 +1,30 @@
 program L2_8;
-{Vyvedite na jekran tablicu znachenij funkcii y=a^x dlja x, izmenjajuwegosja ot a do b s shagom h}
-{Kurilo Dmitry, 8 variant; last modification: 18.09.2011}
+{Вывелите на экран таблицу значений функции для y=a^x для x, изменяющегося от а до b с шагом h}
+{Курило дмитрий; 8 вариант; Последнее изменение: 31.09.2011}
 var
-   x: integer; {x, stepen'} {ot kuda, for}
-   b: integer; {do kuda, for}
-   h: integer; {shag}
-   a: integer; {osnovanie}
+   x: real; {степень} {от куда считаем}
+   b: real; {до куда считаем}
+   h: real; {шаг}
+   a: real; {oснование функции}
 begin
-writeln('Vvedite x(ot kuda chitat), b(do kuda), h(shag), a(onsovanie functii) - celye chisla');
+writeln('Введите x(откуда считать), b(до куда), h(шаг), a(основание функции)');
 readln(x, b, h, a);
-if h<1 then
-   writeln('Beskonechoe vychislenie')
+if b<x then
+begin
+     while b<=x do
+     begin
+         writeln('-----------');
+         writeln('| ', exp(ln(a)*x):3, ' |'); {stepen'}
+         x:=x-h;
+     end;
+     end
 else
 begin
      while x<=b do
      begin
          writeln('-----------');
          writeln('| ', exp(ln(a)*x):3, ' |'); {stepen'}
-         inc(x, h);
+         x:=x+h;
      end;
 end;
 end.
