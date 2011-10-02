@@ -1,3 +1,4 @@
+{RUSSIAN}
 program L2_8;
 {Вывелите на экран таблицу значений функции для y=a^x для x, изменяющегося от а до b с шагом h}
 {Курило дмитрий; 8 вариант; Последнее изменение: 31.09.2011}
@@ -14,7 +15,7 @@ begin
      while b<=x do
      begin
          writeln('-----------');
-         writeln('| ', exp(ln(a)*x):3, ' |'); {stepen'}
+         writeln('| ', exp(ln(a)*x):3, ' |'); {степень}
          x:=x-h;
      end;
      end
@@ -23,7 +24,7 @@ begin
      while x<=b do
      begin
          writeln('-----------');
-         writeln('| ', exp(ln(a)*x):3, ' |'); {stepen'}
+         writeln('| ', exp(ln(a)*x):3, ' |'); {степень}
          x:=x+h;
      end;
 end;
