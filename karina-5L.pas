@@ -1,4 +1,4 @@
-program L5_4;
+program L5_4_a;
 var
    A: array [1..100] of integer;
    O: array [1..100] of integer;
