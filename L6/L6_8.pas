@@ -1,9 +1,9 @@
-program L6_10;
+program L6_8;
 uses crt;
 var
-a, i, r, i2, i3, x: integer;
-binary: array [0..1000] of integer;
-binary1: array [0..1000] of integer;
+i, r, i2, x: integer;
+binary: array [0..100] of integer;
+binary1: array [0..100] of integer;
 begin
 clrscr;
 writeln('Введите десятичное число');
