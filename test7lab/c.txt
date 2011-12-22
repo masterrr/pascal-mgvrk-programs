@@ -1,0 +1,5 @@
+Matrica: 
+34
+00
+Matrica
+summa=7

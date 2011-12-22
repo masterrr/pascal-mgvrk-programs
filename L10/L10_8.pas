@@ -3,11 +3,11 @@ uses
 const
   n=5;{количество слов в массиве}
 var
-  a:array[1..n]of string;
-  s,temp:string;
-  i,j,c:integer;
-  fl:boolean;
-  m:set of char;
+  a: array [1..n] of string;
+  s,temp: string;
+  i,j,c: integer;
+  fl: boolean;
+  m: set of char;
 begin
   writeln('¬ведите слово...');
   readln(s);

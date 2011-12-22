@@ -125,7 +125,7 @@ end;
 
 begin
 clrscr;
-vvodmatr(a,'1013.txt',m,n);
+vvodmatr(a,'a.txt',m,n);
 sortirmatr(a,m,n);
 vivodmatr(a,'rez.txt',n,m);
 readkey;
