@@ -27,19 +27,29 @@ begin
     close(z1);
 end;
 procedure arfmst(z1,z2,z3,z4: integer);
-var arm: real; max: integer;
+var arm: real; max, counter: integer;
 begin
 arm:=0;
 max:=0;
  for j:=z1 to z3 do
     begin
     max:=0;
+    counter:=0;
         for i:=z2 to z4 do
         begin
+        if x[i,j]>0 then
+        begin
             max:=max+x[i,j];
+            inc(counter);
         end;
-    arm:=max/size;
+        end;
+    if not(max=0) then
+    begin
+    arm:=max/counter;
     writeln(arm);
+    end
+    else
+    writeln('0');
     end;
 end;
 begin
